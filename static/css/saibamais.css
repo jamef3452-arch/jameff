@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Estilo do logo */
+.logo img {
+    max-width: 100%; /* Aumentando um pouco o tamanho do logo */
+    height: auto;
+}
+
+/* Estilo do botão */
+.botao img {
+    max-width: 58px; /* Diminuindo o tamanho do botão */
+    height: auto;
+}
+
+a {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: inherit; /* Herdar cor do texto do elemento pai */
+    display: inline-block; /* Garantir que a âncora seja exibida como bloco */
+    padding: 0; /* Remover padding */
+    margin: 0; /* Remover margin */
+}
+
+.banner-nossahistoria {
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-nossahistoria img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Estilos para adicionar texto sobreposto no banner */
+.banner-nossahistoria .texto-sobreposto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #de2e21;
+}
+
+.banner-nossahistoria .texto-sobreposto h2 {
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.5;
+    color: #de2e21;
+}
+
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.slides img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.descricao-empresa {
+    color: #000; /* Cor preta */
+    font-size: 18px; /* Tamanho padrão da fonte */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.descricao-empresa strong {
+    color: #de2e21; /* Cor vermelha */
+}
+
+.descricao-empresa small {
+    font-size: 14px; /* Tamanho de letra menor */
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    
+}
+
+.whatsapp-button img {
+    width: 80%; 
+    height: auto; 
+}
+
+.rodape {
+    background-color: #808080; /* Cinza claro */
+    padding: 20px 0; /* Espaçamento interno */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px; /* Ajuste o espaçamento horizontal conforme necessário */
+}
+
+.logo-contatos {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.logo img {
+    max-width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+.contatos {
+    color: #FFFFFF; /* Define a cor do texto como branco */
+    margin-left: 20px; /* Ajusta o espaçamento entre o logo e os contatos */
+}
+
+.contatos p {
+    margin: 10px 0;
+}
+
+.emphasis {
+    font-size: 1.0em; /* Ajusta o tamanho do strong para dar mais ênfase */
+}
+
+.redes-sociais {
+    display: flex;
+}
+
+.icone-social {
+    color: #FFFFFF; /* Define a cor do ícone como branco */
+    margin-right: 10px; /* Ajuste o espaçamento entre os ícones conforme necessário */
+}
+
+
+@media (max-width: 728px) {
+    .banner-nossahistoria {
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .banner-nossahistoria img {
+        width: 100%; 
+        height: auto; 
+        display: block;
+    }
+}
+
+@media (max-width: 728px) {
+    .footer-container {
+        flex-direction: column; 
+        padding: 30px; 
+        text-align: center; 
+    }
+
+    .logo-contatos {
+        margin-bottom: 20px; 
+    }
+
+    .contatos {
+        margin: 10px auto; 
+    }
+
+    .redes-sociais {
+        justify-content: center; 
+    }
+}
